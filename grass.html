@@ -83,6 +83,18 @@ After ./configure ends successfully run:
 To run Grass (wich is not necessary, since it will be called directly from the nets) simply use this command grass64.
 <br><br>
 <h3>Set the variables</h3>
+<p>The path of the Grass installation should mentioned as well as the sample
+data. Otherwise, Renew can neither call the Grass commands nor to display
+information about the images. Therefore, two variables need to be set in the
+plugin.cfg and more better in the .renew.properties at the home directory (or in
+config file in dist directory of Renew) as follows:
+<p>
+  de.renew.renewgrass.gisbase=”PathToGrassRelease”.
+de.renew.renewgrass.mapset=“PathTosample data”.
+</p>
+
+These variables are necessary for the classes ModuleSupporter.java and
+</p>
 <footer>
 <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
 </footer>
