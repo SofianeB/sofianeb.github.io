@@ -36,12 +36,12 @@ The following steps are for debian-based systems.
 First we need to download a copy of the source code. 
 For this, svn (a revision control system) need to be installed.
 
-$ sudo apt-get install svn
+<p>$ sudo apt-get install svn</p>
 
 After a successful install of svn run:
 
-$ sudo checkout https://svn.osgeo.org/grass/grass/branches/release\
-branch_6_4grass64_release
+<p>$ sudo checkout https://svn.osgeo.org/grass/grass/branches/release\
+branch_6_4grass64_release</p>
 
 After downloading the code, we need to compile it. There are many dependencies, which are necessary for Grass compilation for example: PROJ.4, GEOS
 and GDAL.
@@ -50,8 +50,8 @@ executing the configure command. This generates a file with all the variables
 (can/should be adjusted according to specific needs) that they will be used in
 the compilation phase.
 After ./configure ends successfully run:
-$ make
-$ make install
+<p>$ make</p>
+<p>$ make install</p>
 To run Grass (wich is not necessary, since it will be called directly from the
 nets) simply use this command grass64.
 
