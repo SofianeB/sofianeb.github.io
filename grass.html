@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>Install and configure Grass GIS</title>
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="javascripts/main.js"></script>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<body>
+<header>
+<h1>RenewGrass</h1>
+<p>Let&#39;s Grass with Renew</p>
+</header>
+<div id="banner">
+<!-- <span id="logo"></span>-->
+<!--<a href="https://github.com/SofianeB" class="button fork"><strong>View On GitHub</strong></a>-->
+</div><!-- end banner -->
+<div class="wrapper">
+<nav>
+<ul><a href="index.html" class="button fork"><strong>Home</strong></a></ul>
+<ul><a href="documentation.html" class="button fork"><strong>Publications</strong></a></ul>
+<ul><a href="#" class="button fork"><strong>Documentation</strong></a></ul>
+<ul><a href="#" class="button fork"><strong>About</strong></a></ul>
+<ul><a href="#" class="button fork"><strong>Contact</strong></a></ul>
+</nav>
+<section>
+<li>Install Grass GIS from source:</li>
+The following steps are for debian-based systems. 
+First we need to download a copy of the source code. 
+For this, svn (a revision control system) need to be installed.
+
+$ sudo apt-get install svn
+
+After a successful install of svn run:
+
+$ sudo checkout https://svn.osgeo.org/grass/grass/branches/release\
+branch_6_4grass64_release
+
+After downloading the code, we need to compile it. There are many dependencies, which are necessary for Grass compilation for example: PROJ.4, GEOS
+and GDAL.
+Grass need to be configured before running (make and make install) by
+executing the configure command. This generates a file with all the variables
+(can/should be adjusted according to specific needs) that they will be used in
+the compilation phase.
+After ./configure ends successfully run:
+$ make
+$ make install
+To run Grass (wich is not necessary, since it will be called directly from the
+nets) simply use this command grass64.
+
+<footer>
+<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+</footer>
+</div>
+<!--[if !IE]><script>fixScale(document);</script><![endif]-->
+</body>
+</html>
