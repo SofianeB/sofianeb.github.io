@@ -1,9 +1,9 @@
-!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
-<title>Sofianeb by SofianeB</title>
+<title>RenewGrass by Sofiane B</title>
 <link rel="stylesheet" href="stylesheets/styles.css">
 <link rel="stylesheet" href="stylesheets/pygment_trac.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -15,8 +15,8 @@
 </head>
 <body>
 <header>
-<h1>RenewGrass</h1>
-<p>Let&#39;s Grass with Renew</p>
+<h1>Let&#39;s Renew Grass</h1>
+<p>Petri nets-based Image Processing</p>
 </header>
 <div id="banner">
 <!-- <span id="logo"></span>-->
@@ -43,25 +43,34 @@ The functionality of RenewGrass can be summarized as follows:
 <li>Reduce the gap between the specification of the workflow and its implementation</li>
 </ul>
 
+<h3>Prerequisites</h3>
+<!--<h2>How to Use RenewGrass</h2>-->
+In order to use RenewGrass, the following steps are required:
+<ol>
+<li>Install Renew:</li>
+To install Renew, please refere to the official <a href="http://www.informatik.uni-hamburg.de/TGI/renew/install.html">documentation</a>.
+<li>Install and configure Grass GIS from <a href="grass.html">source</a></li>
 
-<h3>How to Use RenewGrass</h3>
+</ol>
+
+<h3>Add RenewGrass to Renew</h3>
+<p align="justify">
 RenewGrass is a plug-in that can/must be integrated in Renew.
 There are two ways to install a plug-in. 
 If it comes in one single .jar file which includes a file named plugin.cfg, you can just copy the file in the renew2.4.x/plugins directory (if
- you use the Mac OS X application bundle, this directory is located inside the application package at the path Contents/Resources/Java/plugins). 
+you use the Mac OS X application bundle, this directory is located inside the application package at the path Contents/Resources/Java/plugins). 
 
-If the plug-in comprises several
- files, one of which is the file plugin.cfg, then you can create a subdirectory below (e.g.
+If the plug-in comprises several files, one of which is the file plugin.cfg, then you can create a subdirectory below (e.g.
  renew2.4.x/plugins/myplugin and copy all files in this directory.
 On the next startup, the plug-in system will find and include the plug-ins automatically. 
 If you want to include the plug-in in the running system, use the load command.
-The information mentioned above are taken from Renew's user guide, which can found <a href="http://www.informatik.uni-hamburg.de/TGI/renew/renew.pdf">here</a>.<br>
+The information mentioned above are taken from Renew's user guide, which can be found <a href="http://www.informatik.uni-hamburg.de/TGI/renew/renew.pdf">here</a>.<br>
 Users are advised to read it first prior using RenewGrass. 
 
-The RenewGrass plug-in can be downloaded <a href="renewgrass.zip">here</a>.
-After downloading the file, it must be unzipped in the plugins directory. 
-<h3>Modeling the NDVI Workflow</h3>
+The RenewGrass plug-in can be downloaded <a href="sources/renewgrass-2.4.zip">here</a>.
+After downloading the file, it must be unzipped in the plugins directory. </p>
 
+<h3>Modeling the NDVI Workflow</h3>
 </section>
 <footer>
 <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
