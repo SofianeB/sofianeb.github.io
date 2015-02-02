@@ -72,14 +72,21 @@ After downloading the file, it must be unzipped in the plugins directory. </p>
 
 <h3>Modeling the NDVI Workflow</h3>
 <!-- <span>Video</span> -->
+To see how to specify an image processing workflow, we provide in sample directory the Normalized Differences Vegetation Index (NDVI) as a showcase.
+To launch the example, there is a starting script in samples/, which can be run with:
+<br><br>
+<pre><code>bash renewgrass.sh</code></pre>
 
+<p>
+After starting, the net can be simulated with Strg + i (or +r).
+</p> 
 <h3>Grass GIS commands syntax (Java)</h3>
-Since RenewGrass is based on the Jgrasstools library, users are asked to respected their syntax when calling Grass commands from their Java code.
+Since RenewGrass is based on the JGrassTools library, users are asked to respected their syntax when calling Grass commands from their Java code.
 For more information, please visit the official documentation <a href="https://code.google.com/p/jgrasstools/wiki/JGrassTools4Apps">here</a>.
 <strong>Example</strong>
 This is a short illustration about using Grass commands in a Java code.
 The following code concerns the use of the g.region command to set current region to map:
-
+<br></br>
 <pre><code>
 /**
      * display metadata:
@@ -98,6 +105,20 @@ The following code concerns the use of the g.region command to set current regio
         }
     }
 </code></pre>
+
+Users can either call this method in one transition or use each command in on transition.
+The following figure illustrates this.
+
+<p>
+    <img src = "sources/AllInOne.png"
+         alt = "" />
+  </p>
+
+<p>
+    <img src = "sources/EachInsInOneTransition.png"
+         alt = "" />
+  </p>
+
 <h3>Grass Nets Components</h3>
 Coming soon ...
 </section>
