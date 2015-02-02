@@ -73,6 +73,31 @@ After downloading the file, it must be unzipped in the plugins directory. </p>
 <h3>Modeling the NDVI Workflow</h3>
 <!-- <span>Video</span> -->
 
+<h3>Grass GIS commands syntax (Java)</h3>
+Since RenewGrass is based on the Jgrasstools library, users are asked to respected their syntax when calling Grass commands from their Java code.
+For more information, please visit the official documentation <a href="https://code.google.com/p/jgrasstools/wiki/JGrassTools4Apps">here</a>.
+<h2>Example</h2>
+This is a short illustration about using Grass commands in a Java code.
+The following code concerns the use of the g.region command to set current region to map:
+
+<pre><code>
+/**
+     * display metadata:
+    */
+    public void displayMetaData() {
+
+        
+        r__info rinfo = new r__info();
+        rinfo.$$mapPARAMETER = "nc_spm_08/PERMANENT/cell/lsat7_2002_40";
+        rinfo.$$hFLAG = true;
+        try {
+            rinfo.process();
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+</code></pre>
 <h3>Grass Nets Components</h3>
 Coming soon ...
 </section>
