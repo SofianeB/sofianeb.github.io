@@ -1,7 +1,7 @@
 sofianeb.github.io
 ======
 
-Personal Wen site
+Personal Web site
 ______________________________________________________________________
 
  
